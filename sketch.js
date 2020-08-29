@@ -555,17 +555,13 @@ function apply_movement(polygon, intersect_points, movement_length) {
 }
 
 
-function keyPressed() {
-  if (key == 'r') {
-    generate();
-  }
-}
-
 
 function keyPressed() {
     if (key == 's') {
         let c = get(controls_width, 0, width - controls_width, height);
         // saveCanvas.image(c, 0, 0);
         save(c);
+    } else if (key == 'r') {
+	generate();
     }
 }
